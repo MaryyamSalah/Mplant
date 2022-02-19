@@ -3,6 +3,7 @@ import 'package:mplant/screens/constant.dart';
 import 'package:mplant/screens/home_screen.dart';
 import 'package:mplant/screens/menu.dart';
 import 'package:mplant/screens/profile.dart';
+import 'package:mplant/screens/PlantList.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: kBackgroundColor,
         primaryColor: kPrimaryColor,
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       
 
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
     
     '/menu': (context) =>   NavDrawer(),
     '/profile': (context) => MyProfile(),
+    '/plantList': (context) => const PlantList(),
   },
 
     );

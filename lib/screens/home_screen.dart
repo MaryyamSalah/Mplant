@@ -41,7 +41,8 @@ class HomeScreen extends StatelessWidget {
             ),
             IconButton(
              
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/plantList');},
               icon: const Icon(
                 Icons.grass_outlined,
                 color: Colors.green,

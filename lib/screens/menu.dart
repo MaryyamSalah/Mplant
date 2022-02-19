@@ -35,9 +35,9 @@ class NavDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: Icon(Icons.shopping_cart,color: Colors.green,),
-            title: Text('Cart'),
-            onTap: () => {Navigator.of(context).pop()},
+            leading: Icon(Icons.shopping_cart_rounded,color: Colors.green,),
+            title: Text('Buy'),
+            onTap: () => { Navigator.pushNamed(context, '/plantList'),},
           ),
           ListTile(
             leading: Icon(Icons.share,color: Colors.green,),
