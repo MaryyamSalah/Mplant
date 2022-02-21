@@ -10,7 +10,7 @@ List _dataDummy= [
     "title": "Monstera",
     "thumbnailUrl": "https://media.istockphoto.com/photos/large-leaf-house-plant-monstera-deliciosa-in-a-gray-pot-on-a-white-picture-id1310577216?b=1&k=20&m=1310577216&s=170667a&w=0&h=4SJ0-gaK5SSQhPCEO4_R3OK0PxfDPU_rvxBkTfLgPDI=",
     "Price":"30,000 IQD",
-    "author":"kayle",
+    "author":"Sara",
     "group":"Indoor"
   },
   {
@@ -19,7 +19,7 @@ List _dataDummy= [
     "title": "Alocasia Baginda Silver Dragon",
     "thumbnailUrl": "https://media.istockphoto.com/photos/alocasia-dragon-scale-picture-id1342480051?b=1&k=20&m=1342480051&s=170667a&w=0&h=4yCC1TrNvIqnBvthj61bkali8QRhQo-W38QHgbE72rw=",
     "Price":"40,000 IQD",
-    "author": "Liam",
+    "author": "Huda",
     "group":"Indoor"
   },
   {
@@ -28,7 +28,7 @@ List _dataDummy= [
     "title": "Asplenium nidus",
     "thumbnailUrl": "https://media.istockphoto.com/photos/houseplant-asplenium-nidus-in-white-flowerpot-isolated-on-white-picture-id1166437821?k=20&m=1166437821&s=170667a&w=0&h=g_Lddx-gQRo0nSVUyZIdqt1MIyMYgMT09wCZsD5_sXc=",
     "Price":"15,000 IQD",
-    "author": "Emma",
+    "author": "Ronza",
     "group":"Indoor"
   },
   {
@@ -37,7 +37,7 @@ List _dataDummy= [
     "title": "Green succulent",
     "thumbnailUrl": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
     "Price":"20,000 IQD",
-    "author": "Elijah",
+    "author": "Nuha",
     "group":"Indoor"
   },
   {
@@ -46,7 +46,7 @@ List _dataDummy= [
     "title": "crocuses",
     "thumbnailUrl": "https://media.istockphoto.com/photos/crocus-isolated-on-white-background-saffron-in-a-pot-picture-id1302332108?k=20&m=1302332108&s=612x612&w=0&h=MqQcZTkDuuItsEAOprdVNVJFeSJJQvmSgjMQWd8PjgE=",
     "Price":"60,000 IQD",
-    "author": "James",
+    "author": "Nali",
     "group":"Outdoor"
   },
   {
@@ -167,6 +167,7 @@ class _PlantListState extends State<PlantList> {
               ],
             ),
           )
+          
           )
         ],
       ),

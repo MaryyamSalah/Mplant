@@ -191,7 +191,7 @@ class MyProfile extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.centerRight,
                     end: Alignment.centerLeft,
-                    colors: [Colors.green,Colors.black12]
+                    colors: [Colors.green,Colors.green]
                   ),
                   borderRadius: BorderRadius.circular(30.0),
                 ),
@@ -211,6 +211,7 @@ class MyProfile extends StatelessWidget {
   }
    AppBar buildAppBar(context) {
     return AppBar(
+      title: Text('Profile'),
       backgroundColor: kPrimaryColor,
       elevation: 0,
       leading: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () { 

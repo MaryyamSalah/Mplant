@@ -4,6 +4,8 @@ import 'package:mplant/screens/home_screen.dart';
 import 'package:mplant/screens/menu.dart';
 import 'package:mplant/screens/profile.dart';
 import 'package:mplant/screens/PlantList.dart';
+import 'package:mplant/screens/feedback.dart';
+import 'package:mplant/screens/Share.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,6 +37,8 @@ class MyApp extends StatelessWidget {
     '/menu': (context) =>   NavDrawer(),
     '/profile': (context) => MyProfile(),
     '/plantList': (context) => const PlantList(),
+    '/feedback': (context) => const FeedBack(),
+    '/share': (context) =>  ShareApp(),
   },
 
     );

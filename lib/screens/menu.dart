@@ -42,7 +42,7 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.share,color: Colors.green,),
             title: Text('Share'),
-            onTap: () => {},
+            onTap: () => { Navigator.pushNamed(context, '/share')},
           ),
           ListTile(
             leading: Icon(Icons.settings,color: Colors.green,),
@@ -52,7 +52,7 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.border_color,color: Colors.green,),
             title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {Navigator.pushNamed(context,'/feedback' ),},
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app,color: Colors.green,),

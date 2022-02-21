@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_image_slideshow: ^0.1.2
   grouped_list: ^4.2.0
+  comment_box: ^0.0.17
+  share: ^2.0.4
+  image_picker: ^0.8.4+9
+  image_preview: ^1.0.1
 
 dev_dependencies:
   flutter_test:
