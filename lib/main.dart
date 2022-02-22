@@ -6,7 +6,7 @@ import 'package:mplant/screens/profile.dart';
 import 'package:mplant/screens/PlantList.dart';
 import 'package:mplant/screens/feedback.dart';
 import 'package:mplant/screens/Share.dart';
-
+import 'package:mplant/screens/setting.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -27,6 +27,9 @@ class MyApp extends StatelessWidget {
         textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
         primarySwatch: Colors.green,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       
 
       initialRoute: '/',
@@ -39,6 +42,7 @@ class MyApp extends StatelessWidget {
     '/plantList': (context) => const PlantList(),
     '/feedback': (context) => const FeedBack(),
     '/share': (context) =>  ShareApp(),
+    '/setting': (context) =>  SettingsOnePage(),
   },
 
     );

@@ -43,7 +43,9 @@ class Body extends StatelessWidget {
             radius: 50 / 2,
             backgroundImage: NetworkImage(
                 'https://image.shutterstock.com/image-vector/m-letter-logo-icon-design-260nw-1652916667.jpg'),
+                
           ),
+          
                 ],
               ),
             ),

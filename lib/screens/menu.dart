@@ -47,7 +47,7 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.settings,color: Colors.green,),
             title: Text('Setting'),
-            onTap: () => {},
+            onTap: () => {Navigator.pushNamed(context, '/setting')},
           ),
           ListTile(
             leading: Icon(Icons.border_color,color: Colors.green,),
@@ -59,6 +59,9 @@ class NavDrawer extends StatelessWidget {
             title: Text('Logout'),
             onTap: () => {Navigator.of(context).pop()},
           ),
+          Padding(padding: EdgeInsets.all(112)),
+          
+          Text('    Version 1.0',style: TextStyle(color: Colors.green,fontWeight: FontWeight.bold),),
         ],
       ),
     );
