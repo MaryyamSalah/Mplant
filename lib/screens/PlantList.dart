@@ -68,6 +68,7 @@ List _dataDummy= [
     "group":"Outdoor"
   },
 ];
+ List<String> favoriteDataList = [];
 
 class PlantList extends StatefulWidget {
   const PlantList({ Key? key }) : super(key: key);
@@ -102,6 +103,7 @@ class _PlantListState extends State<PlantList> {
         ],
       ),
       ),
+      
     itemBuilder: (context, dynamic element) {
     return Card(
       elevation: 10,
@@ -169,11 +171,14 @@ class _PlantListState extends State<PlantList> {
           )
           
           )
+          
         ],
       ),
       ),
+      
 
     );
+    
   },
     itemComparator: (item1, item2) => item1['title'].compareTo(item2['title']), // optional
     useStickyGroupSeparators: true, // optional
