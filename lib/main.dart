@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mplant/screens/Rating.dart';
 import 'package:mplant/screens/constant.dart';
 import 'package:mplant/screens/home_screen.dart';
 import 'package:mplant/screens/menu.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
     '/feedback': (context) => const FeedBack(),
     '/share': (context) =>  ShareApp(),
     '/setting': (context) =>  SettingsOnePage(),
+    '/rating': (context) =>  RatingPage(),
   },
 
     );

@@ -54,6 +54,12 @@ class NavDrawer extends StatelessWidget {
             title: Text('Feedback'),
             onTap: () => {Navigator.pushNamed(context,'/feedback' ),},
           ),
+
+          ListTile(
+            leading: Icon(Icons.star_border,color: Colors.green,),
+            title: Text('Rating'),
+            onTap: () => {Navigator.pushNamed(context,'/rating' ),},
+          ),
           ListTile(
             leading: Icon(Icons.exit_to_app,color: Colors.green,),
             title: Text('Logout'),
