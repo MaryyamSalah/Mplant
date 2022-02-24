@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:grouped_list/grouped_list.dart';
 import 'package:mplant/screens/constant.dart';
+import 'package:favorite_button/favorite_button.dart';
 
 List _dataDummy= [
 {
@@ -68,7 +69,7 @@ List _dataDummy= [
     "group":"Outdoor"
   },
 ];
- List<String> favoriteDataList = [];
+
 
 class PlantList extends StatefulWidget {
   const PlantList({ Key? key }) : super(key: key);
@@ -84,6 +85,7 @@ class _PlantListState extends State<PlantList> {
       appBar: AppBar(backgroundColor: kPrimaryColor,
         title: Text("List of Plants")),
       body: GroupedListView<dynamic, String>(
+
     elements: _dataDummy,
     groupBy: (element) => element['group'],
     groupSeparatorBuilder: (String groupByValue) => Padding(
@@ -106,6 +108,7 @@ class _PlantListState extends State<PlantList> {
       
     itemBuilder: (context, dynamic element) {
     return Card(
+      
       elevation: 10,
       margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
       child: Container(padding: EdgeInsets.all(5),
@@ -115,7 +118,7 @@ class _PlantListState extends State<PlantList> {
         children: [
           Expanded(child: ClipRRect(child: Image(image: 
           NetworkImage(element['thumbnailUrl']),
-          fit: BoxFit.fill,
+          fit: BoxFit.scaleDown,
           ),
           borderRadius: BorderRadius.all(Radius.circular(5)),
           
@@ -164,17 +167,38 @@ class _PlantListState extends State<PlantList> {
                       child: Text('${element['Price']}'),
                     )
                   ],
+                  
                 ),
                 ),
+                Container(
+          width: MediaQuery.of(context).size.width,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              FavoriteButton(
+                isFavorite: false,
+                // iconDisabledColor: Colors.white,
+                valueChanged: (_isFavorite) {
+                  print('Is Favorite : $_isFavorite');
+                },
+              ),
+              
+            ],
+          )),
+  
               ],
             ),
-          )
+          ),
+          
           
           )
           
         ],
       ),
+      
       ),
+      
       
 
     );

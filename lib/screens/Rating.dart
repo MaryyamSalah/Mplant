@@ -37,14 +37,14 @@ class _RatingPageState extends State<RatingPage> {
                     allowHalfRating: true,
                     itemCount: 5,
                     ratingWidget: RatingWidget(
-                        full: const Icon(Icons.star, color: Colors.green),
+                        full: const Icon(Icons.star, color: Colors.orange),
                         half: const Icon(
                           Icons.star_half,
-                          color: Colors.green,
+                          color: Colors.orange,
                         ),
                         empty: const Icon(
                           Icons.star_outline,
-                          color: Colors.green,
+                          color: Colors.orange,
                         )),
                     onRatingUpdate: (value) {
                       setState(() {

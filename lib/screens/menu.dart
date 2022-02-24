@@ -56,7 +56,7 @@ class NavDrawer extends StatelessWidget {
           ),
 
           ListTile(
-            leading: Icon(Icons.star_border,color: Colors.green,),
+            leading: Icon(Icons.star,color: Colors.green,),
             title: Text('Rating'),
             onTap: () => {Navigator.pushNamed(context,'/rating' ),},
           ),
