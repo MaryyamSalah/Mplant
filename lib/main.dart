@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mplant/screens/Login.dart';
 import 'package:mplant/screens/Rating.dart';
 import 'package:mplant/screens/constant.dart';
 import 'package:mplant/screens/home_screen.dart';
@@ -7,7 +8,10 @@ import 'package:mplant/screens/profile.dart';
 import 'package:mplant/screens/PlantList.dart';
 import 'package:mplant/screens/feedback.dart';
 import 'package:mplant/screens/Share.dart';
+import 'package:mplant/screens/registration.dart';
 import 'package:mplant/screens/setting.dart';
+import 'package:mplant/screens/Login.dart';
+import 'package:mplant/screens/registration.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -36,8 +40,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
   routes: {
     
-    '/': (context) => const HomeScreen(),
-    
+    '/': (context) => LoginPage(),
+    '/signup': (context) =>   SignUpPage(),
+    '/home': (context) =>  HomeScreen(),
     '/menu': (context) =>   NavDrawer(),
     '/profile': (context) => MyProfile(),
     '/plantList': (context) => const PlantList(),

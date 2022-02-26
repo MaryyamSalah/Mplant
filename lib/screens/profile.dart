@@ -215,7 +215,7 @@ class MyProfile extends StatelessWidget {
       backgroundColor: kPrimaryColor,
       elevation: 0,
       leading: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () { 
-        Navigator.pushNamed(context, '/');
+        Navigator.pushNamed(context, '/home');
        },),
       
       

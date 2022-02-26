@@ -43,6 +43,8 @@ dependencies:
   settings_ui: ^2.0.2
   flutter_rating_bar: ^4.0.0
   favorite_button: ^0.0.4
+  font_awesome_flutter: ^9.2.0
+  
 
 dev_dependencies:
   flutter_test:

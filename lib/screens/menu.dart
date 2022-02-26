@@ -31,7 +31,7 @@ class NavDrawer extends StatelessWidget {
             leading: Icon(Icons.home,color: Colors.green,),
             title: Text('Home'),
             onTap: () => {
-              Navigator.pushNamed(context, '/'),
+              Navigator.pushNamed(context, '/home'),
             },
           ),
           ListTile(
@@ -63,7 +63,7 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.exit_to_app,color: Colors.green,),
             title: Text('Logout'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {Navigator.pushNamed(context, '/')},
           ),
           Padding(padding: EdgeInsets.all(112)),
           
