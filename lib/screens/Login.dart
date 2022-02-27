@@ -237,7 +237,7 @@ class SignUpButton extends StatelessWidget {
       Shadow(
         offset: Offset(0.5, 1.0),
         blurRadius: 15,
-        color: Color(0xFF0C9869),
+        color: Colors.white,
       ),
      
     ],
