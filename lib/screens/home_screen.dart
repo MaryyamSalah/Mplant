@@ -26,16 +26,40 @@ class HomeScreen extends StatelessWidget {
               },
               icon: const Icon(
                 Icons.person,
-                color: Colors.green,
+                color: Colors.grey,
+                size: 35,
+              ),
+            ),
+              IconButton(
+              
+              onPressed: () {
+                
+              },
+              icon: const Icon(
+                Icons.notifications,
+                color: Colors.grey,
                 size: 35,
               ),
             ),
             IconButton(
              
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/upload');
+              },
               icon: const Icon(
-                Icons.favorite_outline,
-                color: Colors.green,
+                Icons.add_circle_outline_rounded,
+                color: Color(0xFF0C9869),
+                size:35,
+              ),
+            ),
+              IconButton(
+              
+              onPressed: () {
+                
+              },
+              icon: const Icon(
+                Icons.message_rounded,
+                color: Colors.grey,
                 size: 35,
               ),
             ),
@@ -45,7 +69,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.pushNamed(context, '/plantList');},
               icon: const Icon(
                 Icons.grass_outlined,
-                color: Colors.green,
+                color: Colors.grey,
                 size: 35,
               ),
             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mplant/screens/Login.dart';
 import 'package:mplant/screens/Rating.dart';
+import 'package:mplant/screens/Upload.dart';
 import 'package:mplant/screens/constant.dart';
 import 'package:mplant/screens/home_screen.dart';
 import 'package:mplant/screens/menu.dart';
@@ -50,6 +51,7 @@ class MyApp extends StatelessWidget {
     '/share': (context) =>  ShareApp(),
     '/setting': (context) =>  SettingsOnePage(),
     '/rating': (context) =>  RatingPage(),
+    '/upload': (context) =>   Upload(),
   },
 
     );

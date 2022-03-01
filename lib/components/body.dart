@@ -8,6 +8,7 @@ import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
 
 
+
 class Body extends StatelessWidget {
   const Body({ Key? key }) : super(key: key);
 
@@ -88,8 +89,9 @@ class Body extends StatelessWidget {
               ),),
           ],),
         ),Container(margin: EdgeInsets.all(40),),
+        
       
-       ImageSlideshow(
+      ImageSlideshow(
          
          width: double.infinity,
          height: 250,
