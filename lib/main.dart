@@ -5,6 +5,7 @@ import 'package:mplant/screens/Upload.dart';
 import 'package:mplant/screens/constant.dart';
 import 'package:mplant/screens/home_screen.dart';
 import 'package:mplant/screens/menu.dart';
+import 'package:mplant/screens/message.dart';
 import 'package:mplant/screens/profile.dart';
 import 'package:mplant/screens/PlantList.dart';
 import 'package:mplant/screens/feedback.dart';
@@ -13,6 +14,8 @@ import 'package:mplant/screens/registration.dart';
 import 'package:mplant/screens/setting.dart';
 import 'package:mplant/screens/Login.dart';
 import 'package:mplant/screens/registration.dart';
+import 'package:mplant/screens/message.dart';
+import 'package:mplant/screens/notification.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -52,6 +55,8 @@ class MyApp extends StatelessWidget {
     '/setting': (context) =>  SettingsOnePage(),
     '/rating': (context) =>  RatingPage(),
     '/upload': (context) =>   Upload(),
+    '/notification':(context) => notify(),
+    '/message': (context) =>  ChatsScreen (),
   },
 
     );

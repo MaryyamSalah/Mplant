@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             ),
               IconButton(
               
-              onPressed: () {
+              onPressed: () {Navigator.pushNamed(context, '/notification');
                 
               },
               icon: const Icon(
@@ -54,11 +54,11 @@ class HomeScreen extends StatelessWidget {
             ),
               IconButton(
               
-              onPressed: () {
+              onPressed: () { Navigator.pushNamed(context, '/message');
                 
               },
               icon: const Icon(
-                Icons.message_rounded,
+                Icons.message,
                 color: Colors.grey,
                 size: 35,
               ),
